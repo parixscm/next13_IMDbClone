@@ -25,19 +25,17 @@ export default async function MoviePage({ params: { id } }) {
           style={{ maxWidth: "100%", height: "100%" }}
           className="rounded-lg"
         />
-        <div className="p-2">
-          <h2 className="mb-3 text-lg font-bold">
-            {movie.title || movie.name}
-          </h2>
-          <p className="mb-3 text-lg">
+        <div className="p-2 space-y-3">
+          <h2 className="text-lg font-bold">{movie.title || movie.name}</h2>
+          <p className="text-lg">
             <span className="mr-1 font-semibold">Overview:</span>
             {movie.overview}
           </p>
-          <p className="mb-3">
+          <p>
             <span className="mr-1 font-semibold">Date Released:</span>
             {movie.release_date || movie.first_air_date}
           </p>
-          <p className="mb-3">
+          <p>
             <span className="mr-1 font-semibold">Rating:</span>
             {movie.vote_count}
           </p>
