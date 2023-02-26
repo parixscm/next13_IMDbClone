@@ -2,7 +2,7 @@ import Results from "@/components/Results";
 
 const API_KEY = process.env.API_KEY;
 
-export default async function Home({ searchParams }) {
+export default async function HomePage({ searchParams }) {
   const genre = searchParams.genre || "fetchTrending";
   const response = await fetch(
     `https://api.themoviedb.org/3/${
