@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FiThumbsUp } from "react-icons/fi";
 
 export default function Card({ result }) {
-  console.log(result);
   return (
     <div className="group cursor-pointer rounded-lg transition-shadow duration-200 sm:p-3 sm:m-2 sm:hover:shadow-slate-400 sm:shadow-md sm:border sm:border-slate-300">
       <Link href={`/movie/${result.id}`}>
